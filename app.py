@@ -2,14 +2,12 @@ from flask import Flask, request, render_template, jsonify
 import pymongo
 from bson import json_util
 import pandas as pd
-import pandas_datareader as pdr
-from pandas_datareader import data
+
 import json
 from datetime import date, timedelta
-import yfinance as yf
+
 import requests
 import time
-import plotly.graph_objects as go
 
 app=Flask(__name__)
 
